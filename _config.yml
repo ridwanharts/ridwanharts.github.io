@@ -1,22 +1,3 @@
-# Setup
-title:               ridwanharts Notes
-tagline:             'RN'
-description:         'A reserved <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:                 https://ridwanharts.github.io
-baseurl:             ''
-paginate:            1
-permalink:           pretty
-
-# About/contact
-author:
-  name:              ridwanharts
-  url:               https://google.com
-  email:             ridwanharts@gmail.com
-
-# Gems
-plugins:
-  - jekyll-paginate
-
-# Custom vars
-version:             1.1.0
-google_analytics_id: #UA-XXXX-Y
+title: My Custom Site
+description: A personalized site built with my theme.
+theme: minima
