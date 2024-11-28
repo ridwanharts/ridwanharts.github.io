@@ -21,6 +21,9 @@
         <div id="markdown-content">
             <!-- Content from the Markdown file will appear here -->
         </div>
+        <div id="markdown-content1">
+            <!-- Content from the Markdown file will appear here -->
+        </div>
     </main>
 
     <footer>
@@ -28,6 +31,13 @@
     </footer>
 
     <script>
+        const converter1 = new showdown.Converter();
+        // Convert Markdown to HTML
+        const htmlContent1 = converter1.makeHtml('[Learn more about Markdown](https://www.markdownguide.org/).');
+        // Inject the converted HTML into the page
+        document.getElementById('markdown-content1').innerHTML = htmlContent1;
+        
+                                    
         document.addEventListener('DOMContentLoaded', () => {
             // Fetch the Markdown file
             fetch('content.md')
