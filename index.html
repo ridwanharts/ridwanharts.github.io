@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
 </head>
 <body>
     <header>
@@ -34,8 +34,13 @@
                 return response.text();
             })
             .then(markdown => {
-                // Convert Markdown to HTML using marked.js
-                const htmlContent = marked.parse(markdown);
+                // Create a Showdown converter
+                const converter = new showdown.Converter();
+                
+                // Convert Markdown to HTML
+                const htmlContent = converter.makeHtml(markdown);
+
+                // Insert the HTML content into the page
                 document.getElementById('markdown-content').innerHTML = htmlContent;
             })
             .catch(error => {
