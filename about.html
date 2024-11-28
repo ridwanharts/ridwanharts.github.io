@@ -36,7 +36,7 @@
             // Fetch the Markdown file
             fetch('../about.md')
                 .then(response => {
-                    if (!response.ok) throw new Error(`Failed to load content.md: ${response.statusText}`);
+                    if (!response.ok) throw new Error(`Failed to load about.md: ${response.statusText}`);
                     return response.text();
                 })
                 .then(markdown => {
