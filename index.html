@@ -21,9 +21,6 @@
         <div id="markdown-content">
             <!-- Content from the Markdown file will appear here -->
         </div>
-        <div id="markdown-content1">
-            <!-- Content from the Markdown file will appear here -->
-        </div>
     </main>
 
     <footer>
@@ -31,27 +28,28 @@
     </footer>
 
     <script>
-        
-        // Fetch the Markdown file
-        fetch('content.md')
-            .then(response => {
-                if (!response.ok) throw new Error("Failed to load content.md");
-                return response.text();
-            })
-            .then(markdown => {
-                // Create a Showdown converter
-                const converter = new showdown.Converter();
-                // Example Markdown text
-                const text = markdown;
-                // Convert Markdown to HTML
-                const html = converter.makeHtml(text);
-                // Render the HTML content into the page
-                document.getElementById('markdown-content1').innerHTML = html;
-            })
-            .catch(error => {
-                console.error('Error loading Markdown file:', error);
-                document.getElementById('markdown-content').innerHTML = "<p>Error loading content.</p>";
-            });
+        document.addEventListener('DOMContentLoaded', () => {
+            // Fetch the Markdown file
+            fetch('content.md')
+                .then(response => {
+                    if (!response.ok) throw new Error(`Failed to load content.md: ${response.statusText}`);
+                    return response.text();
+                })
+                .then(markdown => {
+                    // Initialize the Showdown converter
+                    const converter = new showdown.Converter();
+
+                    // Convert Markdown to HTML
+                    const htmlContent = converter.makeHtml(markdown);
+
+                    // Inject the converted HTML into the page
+                    document.getElementById('markdown-content').innerHTML = htmlContent;
+                })
+                .catch(error => {
+                    console.error('Error loading Markdown file:', error);
+                    document.getElementById('markdown-content').innerHTML = `<p>${error.message}</p>`;
+                });
+        });
     </script>
 </body>
 </html>
