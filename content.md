@@ -1,13 +1,15 @@
-# About Me
-Welcome to my custom GitHub Pages site! This content is written in Markdown.
+# Me
+Selamat datang! This content is written in Markdown.
 
-## Projects
-- [Project 1](#)
-- [Project 2](#)
-- [Project 3](#)
+## Daftar Isi
 
-## Contact
-You can reach me via:
-- [Email](mailto:example@example.com)
-- [GitHub](https://github.com/yourusername)
-- 
+Berikut daftar isi untuk memudahkan navigasi :
+
+| Content | Link |
+| ------ | ------ |
+| Dropbox | [plugins/dropbox/README.md][PlDb] |
+| GitHub | [plugins/github/README.md][PlGh] |
+| Google Drive | [plugins/googledrive/README.md][PlGd] |
+| OneDrive | [plugins/onedrive/README.md][PlOd] |
+| Medium | [plugins/medium/README.md][PlMe] |
+| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
