@@ -3,11 +3,11 @@ Selamat datang! This content is written in Markdown.
 
 ## Daftar Isi
 Berikut daftar isi untuk memudahkan navigasi:
-- See the section on [\`JAVA\`](#java).
-- See the section on [\`KOTLIN\`](#kotlin).
-- See the section on [\`SPRINGBOOT\`](#springboot).
-- See the section on [\`CSS\`](#css).
-- See the section on [\`HTML\`](#html).
+- See the section on [JAVA](#java).
+- See the section on [KOTLIN](#kotlin).
+- See the section on [SPRINGBOOT](#springboot).
+- See the section on [CSS](#css).
+- See the section on [HTML](#html).
 
 ---
 
