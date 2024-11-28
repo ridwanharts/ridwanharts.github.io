@@ -33,7 +33,7 @@
     <script>
         const converter1 = new showdown.Converter();
         // Convert Markdown to HTML
-        const htmlContent1 = converter1.makeHtml('[Learn more about Markdown](https://www.markdownguide.org/).');
+        const htmlContent1 = converter1.makeHtml('[Learn more about Markdown](https://www.markdownguide.org/). I just love **bold text**.');
         // Inject the converted HTML into the page
         document.getElementById('markdown-content1').innerHTML = htmlContent1;
         
