@@ -1,4 +1,4 @@
-# Me
+# My Notes
 Selamat datang! This content is written in Markdown.
 
 ## Daftar Isi
