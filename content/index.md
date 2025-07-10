@@ -1,29 +1,18 @@
-# My Notes
-Selamat datang! This content is written in Markdown.
+# Selamat datang di Wan Studio 👋
 
-## Daftar Isi
-Berikut daftar isi untuk memudahkan navigasi:
-- See the section on [JAVA](#java).
-- See the section on [KOTLIN](#kotlin).
-- See the section on [SPRINGBOOT](#springboot).
-- See the section on [CSS](#css).
-- See the section on [HTML](#html).
+Kami adalah penyedia solusi software seperti aplikasi kasir (POS), sistem manajemen invoice, dan integrasi WhatsApp Cloud API untuk UMKM dan bisnis di Indonesia.
 
 ---
 
-### JAVA
-Ini adalah bagian untuk Java.
+## Layanan Kami
 
-### KOTLIN
-Ini adalah bagian untuk Kotlin.
-- ✨ Magic ✨
+- ✅ Aplikasi Kasir Android berbasis Java/XML
+- ✅ Pengiriman Invoice otomatis via WhatsApp Cloud API
+- ✅ Konsultasi integrasi sistem backend POS
 
-### SPRINGBOOT
-Ini adalah bagian untuk Spring Boot.
+---
 
-### CSS
-Ini adalah bagian untuk CSS.
+## Kontak Kami
 
-### HTML
-Ini adalah bagian untuk HTML.
-
+📧 Email: [ridwanharts@gmail.com](mailto:ridwanharts@gmail.my.id)  
+🌐 Website: [https://ridwanharts.my.id](https://ridwanharts.my.id)
