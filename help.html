@@ -1,26 +1,59 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Layanan - Wan Studio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Layanan Kami</h1>
-  </header>
-  <main>
-    <ul>
-      <li>🔧 Aplikasi Kasir Android (Java/XML)</li>
-      <li>📤 Pengiriman Invoice PDF otomatis via WhatsApp</li>
-      <li>📦 Sistem Manajemen Stok & Penjualan</li>
-      <li>🧠 Integrasi dengan Firestore, Firebase, dan Cloud API</li>
-      <li>🖥️ Web API Java (Ant, Hibernate, Sybase)</li>
-    </ul>
-  </main>
-  <footer>
-    <p>&copy; 2024 Wan Studio</p>
-  </footer>
+    <div id="header"></div>
+    <script>
+        // JavaScript to load the header.html into the #header div
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>
+
+    <main>
+        <div id="markdown-content">
+            <!-- Content from the Markdown file will appear here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Me</p>
+    </footer>
+
+    <script>       
+                                    
+        document.addEventListener('DOMContentLoaded', () => {
+            // Fetch the Markdown file
+            fetch('../content/help.md')
+                .then(response => {
+                    if (!response.ok) throw new Error(`Failed to load help.md: ${response.statusText}`);
+                    return response.text();
+                })
+                .then(markdown => {
+                    // Initialize the Showdown converter
+                    const converter = new showdown.Converter();
+
+                    // Convert Markdown to HTML
+                    const htmlContent = converter.makeHtml(markdown);
+
+                    // Inject the converted HTML into the page
+                    document.getElementById('markdown-content').innerHTML = htmlContent;
+                })
+                .catch(error => {
+                    console.error('Error loading Markdown file:', error);
+                    document.getElementById('markdown-content').innerHTML = `<p>${error.message}</p>`;
+                });
+        });
+    </script>
 </body>
 </html>
