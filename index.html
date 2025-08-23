@@ -141,10 +141,10 @@
       </a>
       <nav class="menu" aria-label="Primary">
         <a href="#mission">Mission</a>
-        <a href="#products">Products</a>
+        <a href="#apps">Apps</a>
         <a href="#schools">For Schools</a>
         <a href="#contact">Contact</a>
-        <a class="cta" href="#early-access">Get early access →</a>
+        <a class="cta" href="#apps">Browse apps →</a>
       </nav>
       <button class="mobile-toggle" aria-label="Toggle menu" onclick="document.querySelector('.mobile-panel').classList.toggle('open')">
         ☰
@@ -155,7 +155,7 @@
       <a href="#products" onclick="this.parentElement.classList.remove('open')">Products</a>
       <a href="#schools" onclick="this.parentElement.classList.remove('open')">For Schools</a>
       <a href="#contact" onclick="this.parentElement.classList.remove('open')">Contact</a>
-      <a href="#early-access" class="cta" onclick="this.parentElement.classList.remove('open')">Get early access →</a>
+      <a href="#apps" class="cta" onclick="this.parentElement.classList.remove('open')">Browse apps →</a>
     </div>
   </header>
 
@@ -168,10 +168,11 @@
         <span class="chip" role="listitem">Offline-first</span>
         <span class="chip" role="listitem">Parent dashboard</span>
         <span class="chip" role="listitem">Teacher packs</span>
+      <span class="chip" role="listitem">Free — no subscription</span>
       </div>
       <div class="row mt-4">
-        <a class="btn primary" href="#early-access">Join early access</a>
-        <a class="btn" href="#showcase">See a preview</a>
+        <a class="btn primary" href="#apps">Browse apps</a>
+        <a class="btn" href="#contact">Contact us</a>
       </div>
     </section>
 
@@ -197,23 +198,36 @@
       </div>
     </section>
 
-    <section id="products">
-      <h2>Products (2025 Roadmap)</h2>
+    <section id="apps">
+      <h2>Apps</h2>
+      <p class="lead">All Wan Studio apps — free, no subscriptions.</p>
       <div class="grid cols-3 mt-3">
         <div class="card">
           <h3>Phonics Play</h3>
           <p class="muted">Letter sounds, listen‑and‑match, and tracing. Ages 3–6.</p>
+          <div class="row mt-3">
+            <a class="btn" href="#" aria-label="Google Play: Phonics Play">Get on Google Play</a>
+            <a class="btn ghost" href="#" aria-label="Direct APK: Phonics Play">APK</a>
+          </div>
         </div>
         <div class="card">
           <h3>Numbers & Tracing</h3>
           <p class="muted">Counting 1–20, shapes, colors, and fine‑motor tracing. Ages 3–6.</p>
+          <div class="row mt-3">
+            <a class="btn" href="#" aria-label="Google Play: Numbers & Tracing">Get on Google Play</a>
+            <a class="btn ghost" href="#" aria-label="Direct APK: Numbers & Tracing">APK</a>
+          </div>
         </div>
         <div class="card">
           <h3>Curiosity Cards</h3>
           <p class="muted">Short facts and stories to spark questions for Grades 1–3.</p>
+          <div class="row mt-3">
+            <a class="btn" href="#" aria-label="Google Play: Curiosity Cards">Get on Google Play</a>
+            <a class="btn ghost" href="#" aria-label="Direct APK: Curiosity Cards">APK</a>
+          </div>
         </div>
       </div>
-      <div class="mt-4"><a class="btn" href="#schools">Are you a school? See classroom packs →</a></div>
+      <p class="small muted mt-3">All apps are ad‑free and do not require subscriptions.</p>
     </section>
 
     <section id="showcase">
@@ -245,21 +259,7 @@
       </div>
     </section>
 
-    <section id="early-access">
-      <h2>Join Early Access</h2>
-      <p class="lead">Get updates, try early builds, and help shape Wan Studio.</p>
-      <form class="card" style="display:grid; gap:12px; padding:16px" onsubmit="event.preventDefault(); alert('Thank you! Replace this form action with your Google Form or Email list service.');">
-        <label>Email
-          <input required name="email" type="email" placeholder="you@example.com" style="width:100%; margin-top:6px; background:rgba(255,255,255,0.06); border:1px solid var(--ws-border); border-radius:10px; padding:12px; color:var(--ws-text);" />
-        </label>
-        <div class="row">
-          <button class="btn primary" type="submit">Request access</button>
-          <a class="btn ghost" href="#contact">Contact us</a>
-        </div>
-        <span class="small muted">We’ll only use your email to share product updates. Unsubscribe anytime.</span>
-      </form>
-    </section>
-
+    
     <section id="contact">
       <h2>Contact</h2>
       <div class="grid cols-3 mt-3">
@@ -297,7 +297,7 @@
       <div>
         <strong class="small">Company</strong>
         <div class="mt-2 small"><a href="#mission">Mission</a></div>
-        <div class="small"><a href="#products">Products</a></div>
+        <div class="small"><a href="#apps">Apps</a></div>
         <div class="small"><a href="/about.html">About</a></div>
       </div>
       <div>
