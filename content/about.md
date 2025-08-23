@@ -1,8 +1,8 @@
 # Tentang Kami
 
-**Wan Studio** adalah tim developer Indonesia yang fokus pada pembuatan aplikasi berbasis Java untuk Android, desktop, dan backend.
+**Wan Studio** adalah tim developer Indonesia yang fokus pada pembuatan aplikasi edukasi untuk anak usia dini hingga sekolah dasar.
 
-Kami telah membantu banyak bisnis kecil dan menengah mengotomatisasi pengiriman invoice, membuat aplikasi kasir, dan integrasi API.
+Kami percaya belajar harus menyenangkan. Aplikasi kami dirancang untuk membantu anak membaca, berhitung, dan mengeksplorasi dunia secara aman.
 
 ---
 

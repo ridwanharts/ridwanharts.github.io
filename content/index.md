@@ -1,18 +1,18 @@
 # Selamat datang di Wan Studio 👋
 
-Kami adalah penyedia solusi software seperti aplikasi kasir (POS), sistem manajemen invoice, dan integrasi WhatsApp Cloud API untuk UMKM dan bisnis di Indonesia.
+Kami membuat aplikasi edukasi yang menyenangkan dan aman untuk anak-anak usia taman kanak-kanak hingga sekolah dasar.
 
 ---
 
 ## Layanan Kami
 
-- ✅ Aplikasi Kasir Android berbasis Java/XML
-- ✅ Pengiriman Invoice otomatis via WhatsApp Cloud API
-- ✅ Konsultasi integrasi sistem backend POS
+- ✅ Game edukasi interaktif
+- ✅ Aplikasi belajar membaca dan berhitung
+- ✅ Platform dukungan belajar untuk guru dan orang tua
 
 ---
 
 ## Kontak Kami
 
-📧 Email: [ridwanharts@gmail.com](mailto:ridwanharts@gmail.my.id)  
-🌐 Website: [https://ridwanharts.my.id](https://ridwanharts.my.id)
+📧 Email: [info@wanstudio.my.id](mailto:info@wanstudio.my.id)
+🌐 Website: [https://wanstudio.my.id](https://wanstudio.my.id)
